@@ -10,7 +10,8 @@ st.write("Proyecto de actividad # 3 Modelamiento y Simulación")
 
 # Sidebar para ajustar parámetros
 st.sidebar.header("Parámetros de la simulación")
-p = st.sidebar.slider("Probabilidad de éxito del tratamiento de 0 a 100% (p)", 0.0, 1.0, 0.8)
+st.write("Simulando el resultado de 100 pacientes que reciben un nuevo medicamento con una tasa de éxito del 80%. Un histograma muestra la frecuencia del número de tratamientos exitosos en 100 pacientes.")
+p = st.sidebar.slider("Probabilidad de éxito del tratamiento de 0% a 100% (p)", 0.0, 1.0, 0.8)
 n = st.sidebar.number_input("Número de tratamientos por simulación (n)", min_value=1, value=100)
 simulaciones = st.sidebar.number_input("Número de simulaciones", min_value=1, value=1000)
 
